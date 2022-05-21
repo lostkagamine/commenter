@@ -1,0 +1,88 @@
+`oha` results on my computer (Intel Core i7-10750H @ 5.0 GHz, Arch Linux x86_64)
+
+== GOLANG:
+rin@planetarium: ~/src/commenter_rs ❯ oha http://localhost:3000 -n 500000
+Summary:
+  Success rate: 1.0000
+  Total:        21.5399 secs
+  Slowest:      0.0098 secs
+  Fastest:      0.0001 secs
+  Average:      0.0022 secs
+  Requests/sec: 23212.6938
+
+  Total data:   80.11 MiB
+  Size/request: 168 B
+  Size/sec:     3.72 MiB
+
+Response time histogram:
+  0.001 [4723]   |
+  0.001 [972]    |
+  0.002 [140090] |■■■■■■■■■■■■■■■■■■■
+  0.002 [224259] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.003 [100723] |■■■■■■■■■■■■■■
+  0.004 [20553]  |■■
+  0.004 [2972]   |
+  0.005 [1763]   |
+  0.005 [1443]   |
+  0.006 [994]    |
+  0.006 [1508]   |
+
+Latency distribution:
+  10% in 0.0017 secs
+  25% in 0.0018 secs
+  50% in 0.0020 secs
+  75% in 0.0024 secs
+  90% in 0.0028 secs
+  95% in 0.0030 secs
+  99% in 0.0044 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0016 secs, 0.0002 secs, 0.0038 secs
+  DNS-lookup:   0.0001 secs, 0.0000 secs, 0.0022 secs
+
+Status code distribution:
+  [200] 500000 responses
+
+== RUST:
+rin@planetarium: ~/src/commenter_rs ❯ oha http://localhost:3001 -n 500000
+Summary:
+  Success rate: 1.0000
+  Total:        28.4574 secs
+  Slowest:      0.0194 secs
+  Fastest:      0.0002 secs
+  Average:      0.0028 secs
+  Requests/sec: 17570.1346
+
+  Total data:   55.31 MiB
+  Size/request: 116 B
+  Size/sec:     1.94 MiB
+
+Response time histogram:
+  0.001 [19074]  |■■■■
+  0.002 [47307]  |■■■■■■■■■
+  0.002 [111986] |■■■■■■■■■■■■■■■■■■■■■■■
+  0.003 [151978] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.004 [105234] |■■■■■■■■■■■■■■■■■■■■■■
+  0.005 [45926]  |■■■■■■■■■
+  0.005 [12770]  |■■
+  0.006 [3043]   |
+  0.007 [1145]   |
+  0.008 [675]    |
+  0.009 [862]    |
+
+Latency distribution:
+  10% in 0.0015 secs
+  25% in 0.0022 secs
+  50% in 0.0028 secs
+  75% in 0.0035 secs
+  90% in 0.0041 secs
+  95% in 0.0046 secs
+  99% in 0.0056 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0002 secs, 0.0001 secs, 0.0006 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+
+Status code distribution:
+  [200] 500000 responses
+rin@planetarium: ~/src/commenter_rs ❯ 

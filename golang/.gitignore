@@ -1,0 +1,4 @@
+commenter
+# should this be ignored?
+# oh well, run `soda g config -t sqlite3`
+database.yml
