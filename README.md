@@ -2,7 +2,7 @@
 A simple application because I got curious about the speed differences between Rust and Golang.
 
 ## To run the Rust side:
-Should just be able to `cd rust; cargo r`. You'll find it on `localhost:3001`.
+Should just be able to `cd rust; cargo r --release`. You'll find it on `localhost:3001`.
 
 ## To run the Go side:
  - Install `soda`.
