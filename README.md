@@ -11,8 +11,8 @@ Should just be able to `cd rust; cargo r`. You'll find it on `localhost:3001`.
  - `./go_run.sh` (or `go run -tags sqlite .`).
 
 ## Test parameters:
-The tests in `oha_results.txt` were done with both apps in debug mode (or at least I think),
+The tests in `oha_results.txt` were done with Rust in release mode and `go run`,
 on an Intel Core i7-10750H 6-core, 12-thread laptop processor, running at 5 GHz,
 on Arch Linux x86_64 - Sat 21 May 2022.
 
-Go was faster (on my laptop). But I like Rust more. So I'm biased. Bleh.
+Rust was over three times faster. But I'm biased. Bleh.
