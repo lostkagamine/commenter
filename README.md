@@ -15,4 +15,4 @@ The tests in `oha_results.txt` were done with Rust in release mode and `go run`,
 on an Intel Core i7-10750H 6-core, 12-thread laptop processor, running at 5 GHz,
 on Arch Linux x86_64 - Sat 21 May 2022.
 
-Rust was over three times faster. But I'm biased. Bleh.
+Rust was about three times faster (23 kreqs/sec vs 60 kreqs/sec). (And the language is better. But I'm biased. Bleh.)
