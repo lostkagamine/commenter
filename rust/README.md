@@ -1,4 +1,4 @@
-# Rust
+# Rust (diesel, axum)
 
 ## Performance
 58602.8499 requests/second (58.6 KReqs/sec).
