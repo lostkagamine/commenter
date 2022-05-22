@@ -1,14 +1,9 @@
 # commenter
-A simple application because I got curious about the speed differences between Rust and Golang.
+A couple of simple applications that all do exactly the same thing, to benchmark different languages, Web frameworks and ORMs.
 
-## To run the Rust side:
-Should just be able to `cd rust; cargo r --release`. You'll find it on `localhost:3001`.
-
-## To run the Go side:
- - Install `soda`.
- - cd to `golang`.
- - Set up the database using `soda g config -t sqlite3`.
- - `./go_run.sh` (or `go run -tags sqlite .`).
+## Evaluating
+Please see each language directory for information on how to run.
+A standardised test consisting of `oha http://localhost:(PORT) -n 500000` was used.
 
 ## Test parameters:
 The tests in `oha_results.txt` were done with Rust in release mode and `go run`,

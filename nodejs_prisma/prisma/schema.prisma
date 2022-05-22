@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// In this house, we use 4 spaces.
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model Comment {
+    id Int @id @default(autoincrement())
+    createdAt DateTime @default(now())
+    author String
+    text String
+}

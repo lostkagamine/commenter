@@ -1,0 +1,19 @@
+{
+  "name": "commenter_nodejs",
+  "version": "1.0.0",
+  "description": "Benchmark app",
+  "main": "index.mjs",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rin",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "prisma": "^3.14.0"
+  }
+}

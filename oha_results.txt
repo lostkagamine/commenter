@@ -85,3 +85,46 @@ Details (average, fastest, slowest):
 
 Status code distribution:
   [200] 500000 responses
+
+== NODE.JS (Prisma):
+rin@planetarium: commenter/nodejs_prisma ❯ oha http://localhost:3002 -n 500000
+Summary:
+  Success rate: 1.0000
+  Total:        136.3192 secs
+  Slowest:      0.0370 secs
+  Fastest:      0.0007 secs
+  Average:      0.0136 secs
+  Requests/sec: 3667.8611
+
+  Total data:   56.27 MiB
+  Size/request: 118 B
+  Size/sec:     422.66 KiB
+
+Response time histogram:
+  0.004 [187]    |
+  0.007 [132]    |
+  0.011 [4928]   |
+  0.014 [317309] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.017 [143489] |■■■■■■■■■■■■■■
+  0.020 [26522]  |■■
+  0.024 [5992]   |
+  0.027 [1126]   |
+  0.030 [204]    |
+  0.034 [83]     |
+  0.037 [28]     |
+
+Latency distribution:
+  10% in 0.0116 secs
+  25% in 0.0121 secs
+  50% in 0.0131 secs
+  75% in 0.0146 secs
+  90% in 0.0165 secs
+  95% in 0.0178 secs
+  99% in 0.0214 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0018 secs, 0.0009 secs, 0.0028 secs
+  DNS-lookup:   0.0001 secs, 0.0000 secs, 0.0011 secs
+
+Status code distribution:
+  [200] 500000 responses
