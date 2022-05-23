@@ -13,3 +13,6 @@ on Arch Linux x86_64 - Sat 21 May 2022.
 Rust was about three times faster (23 kreqs/sec vs 60 kreqs/sec). (And the language is better. But I'm biased. Bleh.)
 
 Also thanks [Hannah](https://twitter.com/ravenslofty) for making me realise I put Rust in debug mode, skewing the results in the original commit.
+
+## A cool graph:
+![A graph of the results made in LibreOffice Calc](/chart.png)
