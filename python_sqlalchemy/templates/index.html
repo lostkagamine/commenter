@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Commenter Python</title>
+    </head>
+    <body>
+        There are <strong>{{commentcount}}</strong> comments.<br>
+        {% for comment in comments %}
+            <strong>{{comment.author}}</strong>: {{comment.text}}<br>
+        {% endfor %}
+    </body>
+</html>

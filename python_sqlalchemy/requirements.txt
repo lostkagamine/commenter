@@ -1,0 +1,4 @@
+flask
+sqlalchemy
+waitress
+Flask-SQLAlchemy

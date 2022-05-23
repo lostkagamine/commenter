@@ -1,6 +1,6 @@
 `oha` results on my computer (Intel Core i7-10750H @ 5.0 GHz, Arch Linux x86_64)
 
-== GOLANG:
+== GOLANG (pop, echo):
 rin@planetarium: commenter ❯ oha http://localhost:3000 -n 500000
 Summary:
   Success rate: 1.0000
@@ -43,7 +43,7 @@ Details (average, fastest, slowest):
 Status code distribution:
   [200] 500000 responses
 
-== RUST:
+== RUST (diesel, axum):
 rin@planetarium: commenter ❯ oha http://localhost:3001 -n 500000
 Summary:
   Success rate: 1.0000
@@ -129,7 +129,7 @@ Details (average, fastest, slowest):
 Status code distribution:
   [200] 500000 responses
 
-== C# (EFCore, ASP.NET)
+== C# (EFCore, ASP.NET):
 rin@planetarium: commenter ❯ oha http://localhost:5064 -n 500000
 Summary:
   Success rate: 1.0000
@@ -168,6 +168,49 @@ Latency distribution:
 Details (average, fastest, slowest):
   DNS+dialup:   0.0004 secs, 0.0003 secs, 0.0008 secs
   DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0005 secs
+
+Status code distribution:
+  [200] 500000 responses
+
+== PYTHON (SQLAlchemy, Flask):
+rin@planetarium: commenter/python_sqlalchemy ❯ oha http://localhost:5004 -n 500000
+Summary:
+  Success rate: 1.0000
+  Total:        378.1049 secs
+  Slowest:      0.3972 secs
+  Fastest:      0.0118 secs
+  Average:      0.0378 secs
+  Requests/sec: 1322.3844
+
+  Total data:   130.65 MiB
+  Size/request: 274 B
+  Size/sec:     353.84 KiB
+
+Response time histogram:
+  0.021 [2439]   |
+  0.030 [181505] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.039 [173622] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.049 [11656]  |■■
+  0.058 [69583]  |■■■■■■■■■■■■
+  0.067 [54253]  |■■■■■■■■■
+  0.076 [5916]   |■
+  0.086 [709]    |
+  0.095 [183]    |
+  0.104 [74]     |
+  0.113 [60]     |
+
+Latency distribution:
+  10% in 0.0261 secs
+  25% in 0.0286 secs
+  50% in 0.0322 secs
+  75% in 0.0506 secs
+  90% in 0.0591 secs
+  95% in 0.0623 secs
+  99% in 0.0685 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0016 secs, 0.0005 secs, 0.0026 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0001 secs
 
 Status code distribution:
   [200] 500000 responses
